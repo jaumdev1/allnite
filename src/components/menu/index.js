@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 import {Header,Nav, Logo, UlMenu, Button, DivButton, LogoImg} from './styles';
 
-import { FaBars, Fapen, FaPen,FaHandshake, FaJs } from 'react-icons/fa';
+import { FaRegPaperPlane, FaPen, FaTrophy, FaBars } from 'react-icons/fa';
 import logo from '../../assets/logo.png'
 
 export function HeaderMenu(){
-    const [showDiv, setShowDiv] = useState(true);
+    const [showDiv, setShowDiv] = useState(false);
 
     function handleShowDiv() {
       setShowDiv(!showDiv);
@@ -17,7 +17,7 @@ export function HeaderMenu(){
          <Nav>
        
              <Logo href="/">
-              <LogoImg src={logo}/>
+              <h2>AllNite</h2>
              </Logo>
              <DivButton>
          
@@ -28,8 +28,8 @@ export function HeaderMenu(){
             </DivButton>
              <UlMenu show={showDiv}>
              <li><a href="#"> <FaPen/>  Sobre </a></li>
-             <li><a href="#"><FaHandshake/> Dicas</a></li>
-             <li><a href="#"><FaJs/>Projetos</a></li>
+             <li><a href="#"><FaRegPaperPlane/> Notícias</a></li>
+             <li><a href="#"><FaTrophy/>Competitivo</a></li>
         
             </UlMenu>
 

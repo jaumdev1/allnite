@@ -38,12 +38,17 @@ justify-content:space-between;
 
 export const Logo = styled.a`
 
+color:#6A5ACD;
 display:flex;
 align-items:center;
 justify-content:center;
 font-size: 30px;
-height:70px;
- width:70px;
+height:60px;
+ width:200px;
+ text-decoration: none;
+:hover{
+  color:#fff;
+} 
 @media (max-width: 767.9px){
   
 }
@@ -83,7 +88,7 @@ a{
   color: white;
 } 
 a:hover {
-  color:#f00;
+  color:#6A5ACD;
 }
 
 @media (max-width: 767.9px) {
@@ -100,7 +105,7 @@ a{
 width:200px;
 padding: 10px;
 border-bottom: 1px solid;
-border-color: #f00; 
+border-color: #6A5ACD; 
 }
 
 

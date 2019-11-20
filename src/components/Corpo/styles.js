@@ -19,59 +19,6 @@ align-items:center;
 justify-content:center;
 height:100%;
 `;
-export const AreaSorte = styled.div`
-
-width: 300px;
-height:300px;
-
-position: relative;
-
-display:flex;
-align-items:center;
-justify-content:center;
-flex-direction:column;
-padding-left:5px;
-padding-right:5px;
-`;
-export const BgSorte = styled.div`
-border-radius:15px;
-   width: 100%;
-   height:100%;
-   opacity:0.5;
-   position: absolute;
-   background: #000;
- 
-`;
-
-export  const InputSorte = styled.input`
-z-index:2;
-width:90%;
-border-radius: 15px;
-height:30px;
-text-align:center;
-color:#fff;
-background-color:#000;
-border-color:#fff;
-`;
-export const ButtomSorte = styled.button`
-margin-top: 15px;
-z-index:2;
-width:150px;
-height:30px;
-border-radius: 15px;
-background-color:#000;
-color:#fff;
-
-:hover{
-cursor:pointer;
-background-color:#fff;
-color:#000;
-border-color:#333;
-}
-`;
-
-
-
 
 export const BoxArea = styled.ul`
 
@@ -90,7 +37,7 @@ export const BoxArea = styled.ul`
      list-style:none;
      width: 25px;
      height:25px;
-     background: rgba(255, 255, 255, 0.2);
+     background: rgba(131, 111, 255, 0.2);
      animation: animate 20s linear infinite; 
      bottom:-500px;
   
