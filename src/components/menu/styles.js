@@ -32,9 +32,6 @@ justify-content:space-between;
 }
 `;
 
-
-
-
 export const Logo = styled.a`
 
 color:#6A5ACD;
