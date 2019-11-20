@@ -27,7 +27,6 @@ justify-content:space-between;
 @media (max-width: 767.9px) {
   display:flex;
   max-height: 300px;
-  
   align-items:center;
   flex-direction: column;
 }
