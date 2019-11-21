@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Header = styled.header`
-
+height:150px;
 z-index:3;
 width:100%;
 position:absolute;
@@ -9,139 +9,78 @@ background-color: #000;
 display:flex;
 opacity:0.8;
 justify-content:center;
+box-sizing:border-box;
+overflow:hidden;
 
-@media (min-width: 768px) {
-height:60px;
-}
 `;
-
-
-
-export const Nav = styled.nav`
-
-display:flex;
-align-items:center;
-width:100%;
+export const DivLogo = styled.div`
+width:20%;
 height:100%;
-max-width:960px;
-justify-content:space-between;
-@media (max-width: 767.9px) {
-  display:flex;
-  max-height: 300px;
-  align-items:center;
-  flex-direction: column;
-}
-`;
-
-export const Logo = styled.a`
-color:#6A5ACD;
+background-color:#836FFF;
 display:flex;
 align-items:center;
 justify-content:center;
-font-size: 30px;
-height:60px;
- width:200px;
- text-decoration: none;
-:hover{
-  color:#fff;
-} 
-@media (max-width: 767.9px){
-  
-}
+box-sizing:border-box;
 `;
-
-export const LogoImg = styled.img`
-width:50px;
-
-`;
-
-
-export const UlMenu = styled.ul`
-
+export const DivCentral = styled.div`
+box-sizing:border-box;
+width:60%;
 height:100%;
+background-color:#836FF0;
 
-width:300px;
-list-style: none;
-margin:0;
-
--webkit-flex-flow: row wrap;
-align-items:center;
-display: flex;
-justify-content: space-between;
-padding-right:15px;
-li{
-display:flex;
-align-items:center;
-justify-content:center;
-}
-a{
-  display: flex;
-  align-items:center;
- justify-content:center;
-  text-decoration: none;
- 
-  
-  color: white;
-} 
-a:hover {
-  color:#6A5ACD;
-}
-
-@media (max-width: 767.9px) {
-
-display: ${props => (props.show ? "flex" : "none")};
-width:100%;
-flex-flow: column wrap;
-padding: 0;
-li{
-  width:200px;
-}
-
-a{ 
-width:200px;
-padding: 10px;
-border-bottom: 1px solid;
-border-color: #6A5ACD; 
-}
-
-
-li:last-of-type a {
-border-bottom: none;
-}
-}
-
-  `;
-
-export const DivButton = styled.div`
-transition-timing-function: linear;
-height: 30px;
-display:none;
-
-@media (max-width: 767.9px) {
-width:100%;
-
-display: flex;
-border-bottom: 1px solid; 
-border-top: 1px solid;
-border-color: #666;
-align-items:center;
-justify-content: space-between;
-
-}
 `;
 
-
-export const Button = styled.button`
-cursor: pointer;
-display: flex;
+export const DivPesquisa = styled.div`
+box-sizing:border-box;
+background-color:#fff;
+height:50%;
+display:flex;
 justify-content:center;
-margin-right: 15px;
+align-items:center;
+`;
+export const InputPesquisa = styled.input`
+width:80%;
+box-sizing:border-box;
+height:30px;
+`;
+export const ButtonPesquisa = styled.button`
+margin-left:10px;
+box-sizing:border-box;
 background:none;
-color: #fff;
 border:none;
-font-size: 20px;
-:hover{
-  color:#6A5ACD;
-}
+font-size:25px;
+cursor: pointer;
 
 `;
+
+
+export const DivMenu = styled.div`
+box-sizing:border-box;
+height:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+`;
+export const Menu = styled.ul`
+box-sizing:border-box;
+display:flex;
+justify-content:space-between;
+
+
+`;
+export const LiMenu = styled.li`
+box-sizing:border-box;
+list-style:none;
+padding: 0 15px;
+a{
+  color:#fff;
+}
+`;
+
+export const DivLogin = styled.div`
+width:20%;
+height:100%;
+background-color:#836FFF;
+`;
+
+

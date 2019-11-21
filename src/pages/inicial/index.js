@@ -19,7 +19,7 @@ function Inicial() {
 
   <HeaderMenu /> 
  
-  <SectionH/>
+
  
 
    </>
