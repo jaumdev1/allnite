@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const Header = styled.header`
-z-index:2;
+
+z-index:3;
 width:100%;
 position:absolute;
 background-color: #000;
@@ -33,7 +34,6 @@ justify-content:space-between;
 `;
 
 export const Logo = styled.a`
-
 color:#6A5ACD;
 display:flex;
 align-items:center;
@@ -141,7 +141,7 @@ color: #fff;
 border:none;
 font-size: 20px;
 :hover{
-  color:#f00;
+  color:#6A5ACD;
 }
 
 `;

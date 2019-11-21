@@ -1,7 +1,7 @@
 import React from 'react';
-import {Section, AnimationArea, BoxArea, AreaSorte,BgSorte, InputSorte, ButtomSorte} from './styles'
-import {FaTwitter, FaFacebookF, FaInstagram} from 'react-icons/fa'
-import {GiClover} from 'react-icons/gi'
+import {Section, AnimationArea, BoxArea, Banner} from './styles'
+
+
 export function SectionH(){
 
     
@@ -14,9 +14,9 @@ export function SectionH(){
 
           
             <AnimationArea>
-            
+             <Banner></Banner>
         
-             
+            
              
                <BoxArea>
                    <li><a>all</a></li>

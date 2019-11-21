@@ -1,18 +1,17 @@
 import styled from 'styled-components';
 import React from 'react';
-import BonecoAnimado from '../../assets/ciclo-animacao.png'
-import { stringLiteral } from '@babel/types';
+
 export const Section = styled.section`
 
 width:100%;
 height:100%;
-z-index:1;
+
 `;
 export const AnimationArea = styled.div`
 width:100%;
 
 background:linear-gradient(to left, #000, #111);
-
+position:absolute;
 overflow:hidden;
 display:flex;
 align-items:center;
@@ -20,9 +19,23 @@ justify-content:center;
 height:100%;
 `;
 
+export const Banner = styled.div`
+z-index:2;
+width:500px;
+height:300px;
+padding: 0 15px;
+background-color:#6A5ACD;
+@media (max-width: 767.9px){
+    width:80%;
+height:200px;
+}
+
+
+`;
+
 export const BoxArea = styled.ul`
 
-
+z-index:1;
  left:0;
  width:100%;
  height:100%;
@@ -30,7 +43,7 @@ export const BoxArea = styled.ul`
  position: absolute;
  li{
     overflow:hidden;
-    position: relative;
+    position: absolute;
      display:flex;
      align-items:center;
      justify-content:center;
