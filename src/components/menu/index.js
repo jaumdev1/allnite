@@ -1,45 +1,63 @@
 import React, {useState} from 'react';
-import {Header, DivLogin, DivLogo, DivCentral, DivMenu, DivPesquisa} from './styles';
+import {Header, DivLogin, DivLogo, DivMenu, DivPesquisa, ButttonLogin, DivFechar, ButtonFechar, ButtonAbrir} from './styles';
 import {InputPesquisa, ButtonPesquisa, Menu, LiMenu} from './styles';
-import {FaSearch} from 'react-icons/fa'
+import {FaSearch, FaTimes, FaBars} from 'react-icons/fa'
 
-import { FaRegPaperPlane, FaPen, FaTrophy, FaBars } from 'react-icons/fa';
-import logo from '../../assets/logo.png'
+import { FaUserAlt } from 'react-icons/fa';
+import Logo from '../../assets/logo.svg'
 
 export function HeaderMenu(){
-    const [showDiv, setShowDiv] = useState(false);
+     const [showDiv, setShowDiv] = useState(false);
 
-    function handleShowDiv() {
-      setShowDiv(!showDiv);
-    }
+     function handleShowDiv() {
+       showDiv ? setShowDiv(false) : setShowDiv(true);
+       
+     }
+     function FecharDiv() {
+       showDiv ? setShowDiv(false) : setShowDiv(true);
+       
+     }
 
 //allnite
     return (
-        <Header>
+         <>
+        <Header show={showDiv}>
+             <ButtonAbrir onClick={handleShowDiv}>
+                <FaBars/>
+             </ButtonAbrir>
           <DivLogo>
-               <h1>AllNite</h1>
+               <a><img src={Logo}/></a>
           </DivLogo>
-          <DivCentral>
+   
            <DivPesquisa>
-                <InputPesquisa/>
+                <InputPesquisa placeholder="Buscar Jogador"/>
                 <ButtonPesquisa><FaSearch/></ButtonPesquisa>
-           </DivPesquisa>
-           <DivMenu>
-              <Menu>
-              
-                   <LiMenu><a href="#">TABELAS</a></LiMenu>
-                   <LiMenu><a href="#">PROCURAR TIMES</a></LiMenu>
-                   <LiMenu><a href="#">PARCERIAS</a></LiMenu>
-                   <LiMenu><a href="#">SOBRE</a></LiMenu>
-                   
-              
-              </Menu>
-           </DivMenu>
-          </DivCentral>
-          <DivLogin>
-
+                </DivPesquisa>
+         
+                <DivLogin>
+          <ButttonLogin>
+          <FaUserAlt/>
+          Minha conta
+          </ButttonLogin>
           </DivLogin>
+          
         
         </Header>
+          <DivMenu show={showDiv}>
+               <DivFechar>
+                    <ButtonFechar onClick={FecharDiv}><FaTimes/></ButtonFechar>
+               </DivFechar>
+          <Menu>
+          
+               <LiMenu><a href="#">TABELAS</a></LiMenu>
+               <LiMenu><a href="#">PROCURAR TIMES</a></LiMenu>
+               <LiMenu><a href="#">PARCERIAS</a></LiMenu>
+               <LiMenu><a href="#">SOBRE</a></LiMenu>
+               
+          
+          </Menu>
+          
+       </DivMenu>
+       </>
       );
 }

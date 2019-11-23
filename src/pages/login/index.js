@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Logo from '../../assets/logo.png'
+
 import {Conteiner, ConteinerLogin, LogoImg, InputLogin, InputSenha, ButtomLogar} from './styles';
 import {FaUnlock} from 'react-icons/fa'
 function Login() {
@@ -10,7 +10,7 @@ function Login() {
   <>
   <Conteiner>
   <ConteinerLogin>
-   <a><LogoImg src={Logo}/></a>
+   <a><LogoImg/></a>
     <label>E-mail</label>
     <InputLogin type='text' id='login'/>
     <label>Senha</label>
