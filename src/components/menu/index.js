@@ -37,7 +37,7 @@ export function HeaderMenu(){
                 <DivLogin>
           <ButttonLogin>
           <FaUserAlt/>
-          Minha conta
+          <label>Minha conta</label>
           </ButttonLogin>
           </DivLogin>
           
@@ -51,7 +51,7 @@ export function HeaderMenu(){
           
                <LiMenu><a href="#">TABELAS</a></LiMenu>
                <LiMenu><a href="#">PROCURAR TIMES</a></LiMenu>
-               <LiMenu><a href="#">PARCERIAS</a></LiMenu>
+               <LiMenu><a href="#">NOTÍCIAS</a></LiMenu>
                <LiMenu><a href="#">SOBRE</a></LiMenu>
                
           

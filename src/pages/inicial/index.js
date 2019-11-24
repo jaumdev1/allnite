@@ -18,7 +18,7 @@ function Inicial() {
   <>
 
   <HeaderMenu /> 
- 
+  <SectionH/>
 
  
 

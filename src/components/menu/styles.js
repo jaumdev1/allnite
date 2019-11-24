@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Header = styled.header`
 height:120px;
-z-index:3;
+
 width:100%;
 
 background-color: #c500ff;
@@ -16,8 +16,8 @@ border-color:rgba(255,255,255, 0.7);
 
 @media (max-width: 767.9px){
 height:170px;
-position:absolute;
-z-index:1;
+position:initial;
+z-index:0;
 display:flex;
 flex-wrap:wrap;
 
@@ -32,7 +32,7 @@ filter: brightness(${props => (props.show ? "60%" : "100%")});
 export const ButtonAbrir = styled.button`
 display:none;
 @media (max-width: 767.9px){
-color:#000;
+color:#fff;
 background:none;
 border:none;
 font-size: 30px;
@@ -40,7 +40,7 @@ display:flex;
 align-items:center;
 justify-content:center;
 :hover{
-  color:#fff;
+  color:#000;
 }
 }
 
@@ -115,6 +115,7 @@ color:#000;
 
 
 export const DivLogin = styled.div`
+border:none;
 width:20%;
 height:100%;
 background-color:#c500ff;
@@ -139,6 +140,7 @@ align-items:center;
 font-size:15px;
 color:#fff;
 :hover{
+border:none;
 cursor: pointer;
 color:#000;
 }
@@ -158,7 +160,9 @@ display:flex;
 align-items:center;
 justify-content:center;
 transition: left .7s;
+
 @media (max-width: 767.9px){
+    top:0;
     left:${props => (props.show ? "0" : "-100%")}; 
     height:100%;
     width:200px;
@@ -166,7 +170,7 @@ transition: left .7s;
     align-items:flex-start;
     position:absolute;
     flex-direction:column;
-z-index:2;
+    z-index:1;
 
   }
 `;
@@ -234,8 +238,9 @@ margin-left:15px;
 background:none;
 border:none;
 font-size:20px;
+color:#fff;
 :hover{
-  color:#fff;
+  color:#000;
 }
 `;
 
