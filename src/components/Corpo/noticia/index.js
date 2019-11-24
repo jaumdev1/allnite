@@ -21,16 +21,14 @@ export function Noticia(){
          <ImagemNoticia src="https://media.discordapp.net/attachments/595355714008907806/648201186079408147/FortniteEsports2Fnews2Ffortnite-champion-series-season-x-official-rules2FNewsHeader-1920x1080-1c78cc.png"/>
        <TextoNoticia>
          EXTENSÃO DO CAPÍTULO 2: TEMPORADA 1
-        
-         </TextoNoticia>
+        </TextoNoticia>
        
         </NoticiaDiv>
         <NoticiaDiv show = {true} >
          <ImagemNoticia src="https://cdn.discordapp.com/attachments/595355714008907806/648201340199370773/fortnite-battle-royale-gameplay-capa.png"/>
            <TextoNoticia>
          UM NOVO PROJETO COM O OBJETIVO DE REVOLUCIONAR A COMUNIDADE É CRIADO!
-        
-         </TextoNoticia>
+           </TextoNoticia>
         
         </NoticiaDiv>
         </>

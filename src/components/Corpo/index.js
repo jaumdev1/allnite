@@ -9,9 +9,9 @@ export function SectionH(){
     return (
         
         <Section>
-          <Noticia>
+          <Noticia/>
 
-          </Noticia>
+       
          
 
          
