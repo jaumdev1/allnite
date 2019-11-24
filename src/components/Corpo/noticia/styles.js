@@ -49,6 +49,7 @@ height:90%;
 margin-bottom:15px;
   }  
 @media (max-width: 767.9px){
+margin-top:30px;
 width:90%;
 height:80%;
 margin-bottom:15px;
