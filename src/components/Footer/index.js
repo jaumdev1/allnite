@@ -1,7 +1,7 @@
 import React from 'react';
-import {FooterS, QuadroF} from './styles'
-
-export default function Footer(){
+import {FooterS, QuadroF, FooterQuadro, Copy} from './styles'
+import {FaInstagram, FaTwitter,  FaDiscord} from 'react-icons/fa'
+export  function Footer(){
 
     
 
@@ -10,25 +10,31 @@ export default function Footer(){
         
      
      <FooterS>
+       <FooterQuadro>
         <QuadroF>
-          <h1>Social</h1>
-          <li><a href="/">Instagram</a></li>
-          <li><a href="/">Facebook</a></li>
-          <li><a href="/">Twitter</a></li>
+          <h1>Informações</h1>
+          <li><a href="/">Sobre o Projeto</a></li>
+          <li><a href="/">Contato e Sugestões</a></li>
+          <li><a href="/">Política e Privacidade</a></li>
         </QuadroF>
         <QuadroF>
-          <h1>Social</h1>
-          <p>Instagram</p>
-          <p>Facebook</p>
-          <p>Twitter</p>
-        </QuadroF>
-        <QuadroF>
-          <h1>Social</h1>
-          <p>Instagram</p>
-          <p>Facebook</p>
-          <p>Twitter</p>
-        </QuadroF>
+          <h1>Criadores</h1>
+          <li><a href="/">João "Luse</a></li>
+          <li><a href="/">Arthur "Dale"</a></li>
         
+      
+        </QuadroF>
+        <QuadroF>
+          <h1>Redes Sociais</h1>
+          <li><a href="/"><FaInstagram/> Instagram</a></li>
+          <li><a href="/"><FaTwitter/> Twitter</a></li>
+          <li><a href="/"><FaDiscord/>Discord</a></li>
+         
+        </QuadroF>
+        </FooterQuadro>
+        <Copy>
+            <p>COPYRIGHT ALLNITE 2019-2020. TODOS OS DIREITOS RESERVADOS.</p>
+        </Copy>
      </FooterS>
 
       

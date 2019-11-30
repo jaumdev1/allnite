@@ -8,7 +8,8 @@ import {Div, Button, Menu, Links} from './styles';
 import {HeaderMenu} from '../../components/menu';
 //CORPO 
 import {SectionH} from '../../components/Corpo'
-//FOOTER
+//FOOTER 
+import {Footer} from '../../components/Footer'
 
 function Inicial() {
 
@@ -19,7 +20,7 @@ function Inicial() {
 
   <HeaderMenu /> 
   <SectionH/>
-
+  <Footer/>
  
 
    </>

@@ -72,11 +72,12 @@ export const TextoNoticia = styled.h1`
 display:flex;
 align-items:center;
 justify-content:center;
-
+height:200px;
 text-align:center;
-width:600px;
-
+width:500px;
+padding: 20px 20px;
 font-size:35px;
+
 :hover{
     cursor:pointer;
     color:#000;
